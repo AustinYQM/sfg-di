@@ -1,6 +1,6 @@
 package com.yqmonline.sfgdi.controllers;
 
-import com.yqmonline.sfgdi.services.GreetingServiceImpl;
+import com.yqmonline.sfgdi.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class PropertyInjectedControllerTest {
   @BeforeEach
   void setUp() {
     controller = new PropertyInjectedController();
-    controller.greetingService = new GreetingServiceImpl();
+    controller.greetingService = new ConstructorGreetingServiceImpl();
 
   }
 
